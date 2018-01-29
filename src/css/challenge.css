@@ -1,0 +1,83 @@
+body {
+    background-image:url("../content/challenge.jpg");
+    background-size:cover;
+}
+
+.content {
+    background-color: rgba(245,245,245,.6);
+    height: calc(100% - 240px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    max-width: 1200px;
+    width: 90%;
+    /*position: relative;
+    z-index: 1;*/
+    box-shadow: 5px 10px 5px 10px rgba(0, 0, 0, 0.5);
+    display: table;
+}
+
+.header {
+    height: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    /*z-index: 10;*/
+}
+
+
+.footer {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left:0;
+}
+
+.date-of-birth {
+    font-size: 28px;
+    color: black;
+}
+
+.content-cell{
+    display:table-cell;
+    text-align:center;
+    vertical-align: middle;
+}
+
+#proceed {
+    width: 200px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    margin-top: 30px;
+    font-size: 21px;
+    background-color: #d34836;
+    color: white;
+    cursor:pointer;
+}
+
+#proceed.disabled {
+    cursor: not-allowed;
+    color: lightgrey;
+    background-color: #c3796f;
+}
+
+#date {
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+}
+
+@media only screen and (max-width: 425px) {
+    
+    .content{
+        width:70%;        
+    }
+}
