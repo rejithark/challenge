@@ -1,9 +1,15 @@
 var challenge = function () {
     return {
-        init: function () {                       
-            $("#date").change(function () {
+        init: function () {       
+                        
+            $("#date").keyup(function () {
                 var dateOfBirth = $("#date").val();
-                var dob = new Date(dateOfBirth);
+                var date = moment(dateOfBirth, 'YYYY-MM-DD',true);
+                if (!date.isValid()) {
+                    $("#proceed").prop("disabled", true).addClass("disabled");
+                    return;
+                }
+                var dob = date.toDate();
                 var today = new Date();
                 var age = Math.floor((today - dob) / (365.25 * 24 * 60 * 60 * 1000));
                 if (age >= 18) {

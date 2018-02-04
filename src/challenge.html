@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="css/challenge.css" />
     <script src="scripts/challenge.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
 </head>
 
 <body>
@@ -13,15 +14,11 @@
         <div class="content-cell">
             <div class="date-of-birth">
                 <span> Date of birth: </span>
-                <input type="date" id="date" placeholder="yyyy-mm-dd" />
-
+                <!--<input type="date" id="date" placeholder="yyyy-mm-dd" />-->
+                <input type="text" id="date" placeholder="yyyy-mm-dd" value=""/>
             </div>
             <button id="proceed" class="disabled" disabled="disabled">Proceed</button>
-        </div>
-       
-      
-        <!--<div id="dialog" title="Hey!">        
-        </div>-->
+        </div>         
     </div> 
     
     <div class="footer"></div>
